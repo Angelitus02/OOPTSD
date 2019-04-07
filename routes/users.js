@@ -1,3 +1,5 @@
+//Code by Sheril and Angel//
+
 var express = require('express');
 var router = express.Router();
 var User = require('../models/users');
@@ -5,13 +7,21 @@ var jwt = require('jsonwebtoken');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+    res.send('respond with a resource');
 });
 
 //register
 router.post('/register', function(req, res, next){
     var username = req.body.user_name;
     var password = req.body.password;
+    var fullname = req.body.full_name;
+    var email = req.body.email;
+    var address2 = req.body.address2;
+    var address1 = req.body.address1;
+    var zipcode = req.body.zip_code;
+    var phonenumber = req.body.phone_number;
+    var birth = req.body.date_of_birth;
+    var country = req.body.country;
     // Check if account already exists
     User.findOne({ 'user_name' :  username }, function(err, user)
     {
@@ -29,7 +39,15 @@ router.post('/register', function(req, res, next){
 
             // set the user's local credentials
             newUser.user_name = username;
+            newUser.full_name = fullname;
             newUser.password = newUser.generateHash(password);
+            newUser.email = email;
+            newUser.address1 = address1;
+            newUser.address2 = address2;
+            newUser.zip_code = zipcode;
+            newUser.phone_number = phonenumber;
+            newUser.date_of_birth = birth;
+            newUser.country = country;
             newUser.access_token = createJwt({user_name:username});
             newUser.save(function(err, user) {
                 if (err)
@@ -41,8 +59,6 @@ router.post('/register', function(req, res, next){
         }
     });
 });
-
-
 
 /*
  Creates a JWT
@@ -94,7 +110,5 @@ router.get('/login', function(req, res, next) {
     res.render('login');
 });
 
-
-
-
 module.exports = router;
+

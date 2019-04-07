@@ -1,0 +1,99 @@
+<!---(Ryan)--->
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SHOP HOME</title>
+        <link rel="stylesheet" href="ShopHome.css">
+        <script>
+            function getRandomImage() {
+                var ranImageArray = ["Featured.jpg","featured2.jpeg","featured3.jpg","featured4.jpg"]
+                path = 'images/'; 
+                var num = Math.floor( Math.random() * ranImageArray.length );
+                var img = ranImageArray[ num ];
+                var imgStr = '<img src="' + path + img + '" style="max-width: 100%" alt = "featured image">';
+                document.write(imgStr); 
+                document.close();
+}
+        
+        </script>
+
+    </head>
+    <body>
+                     <div class="promo">
+                SALE STARTS SOON
+            </div>
+        <div class="outerGrid"> <!--Outer Layer css- grid -->
+
+            <div class="featured">
+                <a href="/shopFront"><script type="text/javascript">getRandomImage();</script></a>
+            </div>
+            <!-- <div class="sidebar sidebar1">
+                <p>SideBar</p>
+            </div> -->
+            <div class="contentDiv container">
+                <!-- <div class="category hats catContainer">
+                    <a><img src="images/hats.jpg" alt="Avatar" class="catImage"></a>
+                    <div class="catMiddle">
+                        <div class="catText">BROWSE HATS</div>
+                    </div>
+                </div> -->
+               <div class="category hats"><a href="#"><img src="images/hats.jpg"/></a></div>
+                <div class="category scarves"><a href="#"><img src="images/accessories.jpg"/></a></div>
+                <div class="category hoodies"><a href="#"><img src="images/hoodies.jpg"/></a></div>
+                <div class="category jeans"><a href="#"><img src="images/jeans.jpg"/></a></div>
+                <div class="category underwear"><a href="#"><img src="images/socks.jpg"/></a></div>
+                <div class="category shoes"><a href="#"><img src="images/shoes.jpg"/></a></div>
+            </div>
+            <!-- <div class="sidebar sidebar2">
+                <p>SideBar</p>
+            </div> -->
+            
+         </div>
+        <br/>
+	<br>
+        <footer class="site-footer"><div class="wrap"><div class="about footer-widget">
+
+                <div class="footer-heading">About OOPTSD®</div>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                </div>
+
+
+                <div class="site-links footer-widget">
+
+                <div class="footer-heading">Site Links</div>
+
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+
+                </div>
+
+
+                <div class="our-sites footer-widget">
+
+                <div class="footer-heading">Our Sites</div>
+
+                <ul>
+                    <li><a href="#" target="_blank" title="Lorem ipsum">Lorem ipsum</a></li>
+                    <li><a href="#" target="_blank" title="Lorem ipsum">Lorem ipsum</a></li>
+                    <li><a href="#" target="_blank" title="Lorem ipsum">Lorem ipsum</a></li>
+                    <li><a href="#" target="_blank" title="Lorem ipsum">Lorem ipsum</a></li>
+                    <li><a href="#" target="_blank" title="Lorem isum">Lorem ipsum</a></li>
+                    <li><a href="#" target="_blank" title="Lorem ipsum">Lorem ipsum</a></li>
+                </ul>
+
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

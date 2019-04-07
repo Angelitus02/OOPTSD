@@ -1,72 +1,75 @@
+<!---(Ryan)--->
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{{title}}</title>
-      <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' />
-      <link rel='stylesheet' href='/stylesheets/style.css'/>
-      <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-      <script src="/javascripts/auth.js"></script>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  </head>
+    <!-- stylesheets & css -->
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Javascripts -->
+    <script src="/javascripts/autocomplete.js"></script>
+    <script src="/javascripts/auth.js"></script>
+    <script src="/javascripts/navigation.js"></script>
+    <script src="/javascripts/categoryFunctions.js"></script>
+    <script src="/javascripts/productFunctions.js"></script>
+    <script src="/javascripts/cart.js"></script>
+
+<a href="/">
+    <img id="logo" src="images/Logo.png" class="img-responsive" alt="Logo">
+</a>
+        <nav id="navbar" class="navbar">
+                <div class="navbar-links">
+                    <ul>
+                        <li><a id="shopNav" >Shop</a></li>
+                        <li><a id="backEndNav">Management</a></li>
+                        <!-- Category Dropdown : Should redirect to page with specified category or fill feed with selected, currently coded out as not working fully -->
+			<!--<li>
+                            <div class="dropdown">
+                              <button class="dropbtn" >Categories</button>
+                              <div class="dropdown-content">
+                                <a href="javascript:categoryLink('Hats')" id="Hats">Hats</a>
+                                <a href="javascript:categoryLink('Socks')" id="Socks">Socks</a>
+                                <a href="javascript:categoryLink('Hoodies')" id="Hoodies">Hoodies</a>
+                                <a href="javascript:categoryLink('Jeans')" id="Jeans">Jeans</a>
+                                <a href="javascript:categoryLink('Accessories')" id="Accessories">Accessories</a>
+                                <a href="javascript:categoryLink('Shoes')" id="Shoes">Shoes</a>
+                              </div>
+                            </div>-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-icons">
+                    <a id="cartButton">
+                        <img src="images/004-shop.png" class="img-responsive" alt="Logo">
+                    </a>
+                    <a id="toLoginPageButton">
+                        <img id="user" src="images/005-user-silhouette.png" class="img-responsive" alt="Logo">
+                    </a>
+                </div>
+        </nav>
+
+</head>
+
+<body>
+
+{{{body}}}
 
 
-  <body>
-  <nav id="Nav" class="navbar navbar-dark navbar-fixed-top">
-      <!-- Brand -->
-      <a class="navbar-brand" href="#"></a>
-
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-          <p id="menu">Menu</p>
-      </button>
-
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-              <li class="nav-item"><br>
-              </li>
-          </ul>
-      </div>
-  </nav>
-      <img id="Logo" src="images/Logo.png" class="img-responsive" alt="Logo">
-  </a>
-    {{{body}}}
-
-    <!-- Footer -->
-  <div id="contacts" class="footer">
-      <div class="section-inner" >
-
-
-          <div id="smedias"class="container">
-              <div class="row">
-                  <div class="col-sm-3"></div>
-
-                  <div class="col-sm-1">
-                      <br/>
-                      <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/twitter.png"></a>
-                  </div>
-                  <div class="col-sm-4">
-                      <p>
-                          Contact Details<br/>
-                          Email: JohnDoe@example.com<br/>
-                          Phone Number: 086 1234567<br/>
-                          Fax: We don't have one.
-                      </p>
-                  </div>
-                  <div class="col-sm-1">
-                      <br/>
-                      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"></a>
-                  </div>
-
-                  <div class="col-sm-3"></div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  </body>
-
+</body>
 </html>
+

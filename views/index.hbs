@@ -1,5 +1,37 @@
-<h1>{{title}}</h1>
-
+<!-- (Old sidebar code by Stephen) 
+<div id="sideBar" class="w3-sidebar w3-dark-grey">
+  <a href="/" class="w3-bar-item w3-button" ><img id="Logo" src="images/Logo.png" class="img-responsive" alt="Logo"></a>
+  <br>
+  <p class="w3-bar-item"></p>
+  <br>
+  <p class="w3-bar-item"></p>
+  <br>
+  <a  class="w3-bar-item w3-button" id="shopNav">Shop</a>
+  <br>
+  <a  class="w3-bar-item w3-button" id="backEndNav">Management</a>
+         
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Dropdown</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  </div>
+</div>
+-->
+<!---(Ryan)-->
+<style>
+body{
+    
+  background-image: url("../images/loginbg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size:cover;
+    
+    }
+</style>
 <div class="row" >
     <div class="col-sm-4">
     </div>
@@ -7,9 +39,10 @@
 
             <form role="form" id="log-form">
               <div class="form-group" >
-                <label for="inputUsername" class="control-label">Username</label>
+
+                  <label for="inputUsername" class="control-label">Username</label>
                 <input type="text" class="form-control input-lg required" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+                <small id="emailHelp" class="form-text">We'll never share your username with anyone else.</small>
               </div>
               <div class="form-group">
                 <label for="inputPassword" class="control-label">Password</label>
@@ -17,9 +50,11 @@
               </div>
               <div class="form-check">
               </div>
-            <button type="submit" class="btn btn-warning btn-lg">Log in</button>
+            <button type="submit" class="btn btn-danger btn-lg">Log in</button>
+                
              </form>
-
+<br>
+		<button  id = "registerButton" class="btn btn-danger btn-lg">Register</button>
         </div>
     <div class="col-sm-4">
     </div>

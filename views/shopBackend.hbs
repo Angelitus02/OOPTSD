@@ -1,0 +1,104 @@
+<!---(Ryan/Stephen)--->
+<!-- Old sidebar code
+<div id="sideBar" class="w3-sidebar w3-dark-grey">
+<a href="/" class="w3-bar-item w3-button" ><img id="Logo" src="images/Logo.png" class="img-responsive" alt="Logo"></a>
+  <p class="w3-bar-item"></p>
+  <br>
+  <p class="w3-bar-item"></p>
+  <br>
+  <form method='post' id='search-form'>
+  Search by Category: 
+  <select class="selectpicker" data-style="btn-info" name="selectpicker" onchange="fillCategoryField()">
+       			<optgroup id="sideBarList" label="Select Category">
+			
+               		</optgroup>
+  </select>
+  <br>
+  Search by Name: <input type='text' id='inputName' name='inputName' placeholder='Enter product name'><input type='submit' id='searchsubmission' value='Search'>
+  </form>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Edit Products</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="#" class="w3-bar-item w3-button">Add Product</a>
+      <a href="#" class="w3-bar-item w3-button">Update Products</a>
+    </div>
+  </div>
+</div>
+-->
+
+<br/>
+<div class='container' id="productmenu">
+<br>            
+<div id="updateProducts">
+            <p>Enter New Product:</p>
+            <form role="form" runat="server" id="product-form" method="post" enctype="multipart/form-data" action="/addProduct">
+                <div class="row">
+			<div class="col-sm-6">
+				<label for="name" class="control-label">Product Name</label>
+                		<input type="text" class="form-control input-lg required" required="required" name="name" id="name" placeholder="Enter product name">
+			</div>
+		
+			<div class="col-sm-3">
+                		<label for="price" class="control-label">Price</label>
+                		<input type="text" class="form-control input-lg required" required="required" name="price" id="price" placeholder="Price">
+			</div>
+
+			<div class="col-sm-3">
+        		        <label for="stockCount" class="control-label">Quantity</label>
+        		        <input type="text" class="form-control input-lg required" required="required" name="stockCount" id="stockCount" placeholder="0">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<label for="category" class="control-label">Category</label>		
+				<select class="selectpicker" id="categoryList" data-style="btn-info" name="selectpicker" onchange="fillCategoryField()">
+       				<optgroup label="Select Category">
+			
+               			</optgroup>
+    				</select> 
+				<input type="text" class="form-control input-lg required" required="required" name="category" id="category" placeholder="Enter New Category">
+			</div>
+		
+			<div class="col-sm-8">
+			<label for="description" class="control-label">Description</label>
+                	<input type="text" class="form-control input-lg required" required="required" name="description" id="description" placeholder="None Provided">
+			</div>
+		</div>
+		<br>
+                <label for="productImage" class="control-label">Upload Image: </label>
+                <input type="file" name="productImage" onchange="readURL(this);" required="required" id="uploadInput">
+                <br><br><img id="preview" src="#" alt="No Image Selected!"><br><br>
+                Upload Product: <input type="submit" id="submission" value="Enter Product">
+		
+            </form>
+            <br/>
+            <br/>
+</div>
+<br>
+<div class="backendSearch">
+<p>Search For Products:</p>
+    <form method='post' autocomplete="off" id='nameSearchB'><div class="autocomplete"><input type='text' id='inputName' name='inputName' placeholder='Search by Name'></div>
+        <input type='submit' id='searchsubmission' value='Search'>
+    </form>
+
+    <form method='post' id='categorySearchB'>
+        <select class="selectpicker" data-style="btn-info" name="selectpicker" onchange="fillCategoryField()">
+            <optgroup id="sideBarList" label="Select Category"></optgroup>
+        </select>
+        <input type='submit' id='searchsubmission' value='Search'>
+    </form>
+
+    <!--<a href="#top">Back to Top</a>-->
+</div>
+
+<div id="manageProducts" class="mt-6">
+                <br/>
+                                
+		<br/>
+</div>
+</div>
+<br>
+
+            
+  
